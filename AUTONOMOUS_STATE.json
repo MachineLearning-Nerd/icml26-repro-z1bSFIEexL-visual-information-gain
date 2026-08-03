@@ -1,1 +1,28 @@
-{"schema_version":1,"openreview_id":"z1bSFIEexL","phase":"claim_1_source_cpu_feasibility_audit_complete_inconclusive","next_action":"implement_vig_definition_cpu_toy","active_run_ids":[],"completed_milestones":["live_duplicate_gate","live_contract_saved","source_archive_and_pdf_pinned","claim_1_source_cpu_feasibility_audit"],"claim_attempt_counts":{"1":1},"publication_allowed":false,"compute_policy":"local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute","claim_1_outcome":{"verdict":"inconclusive","scope":"Source pin and CPU feasibility audit only; no VLM/perplexity execution or benchmark claim reproduced.","evidence":"evidence/source/SHA256SUMS"}}
+{
+  "schema_version": 1,
+  "openreview_id": "z1bSFIEexL",
+  "phase": "claim_1_attempt_2_vig_definition_toy_complete",
+  "next_action": "independent_review_claim_1_vig_toy",
+  "active_run_ids": [],
+  "completed_milestones": [
+    "live_duplicate_gate",
+    "live_contract_saved",
+    "source_archive_and_pdf_pinned",
+    "claim_1_source_cpu_feasibility_audit"
+  ],
+  "claim_attempt_counts": {
+    "1": 2
+  },
+  "publication_allowed": false,
+  "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "claim_1_outcome": {
+    "verdict": "toy",
+    "scope": "Fixed-probability local CPU implementation of source VIG log-PPL ratio and token CE decomposition with matching/partial/conflicting/weak-visual controls; not LVLM or benchmark evidence.",
+    "evidence": [
+      "outputs/claim1_vig_definition_toy/config.json",
+      "outputs/claim1_vig_definition_toy/raw_probabilities.json",
+      "outputs/claim1_vig_definition_toy/results.csv",
+      "outputs/claim1_vig_definition_toy/SHA256SUMS"
+    ]
+  }
+}

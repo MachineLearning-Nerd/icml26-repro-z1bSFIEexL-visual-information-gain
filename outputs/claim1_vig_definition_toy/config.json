@@ -1,0 +1,5 @@
+{
+  "seed": 20260803,
+  "metric": "VIG=log(PPL(A|Q)/PPL(A|Q,I))=mean_t(CE_text-CE_image)",
+  "scope": "synthetic fixed probability toy; no VLM, image, or benchmark"
+}

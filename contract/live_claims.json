@@ -1,0 +1,37 @@
+{
+  "orid": "z1bSFIEexL",
+  "submission_number": 619,
+  "title": "Focusing Where Vision Matters: Selective Training for Large Vision Language Models via Visual Information Gain",
+  "area": "Deep Learning",
+  "subarea": "Foundation Models",
+  "openreview": "https://openreview.net/forum?id=z1bSFIEexL",
+  "arxiv": "2602.17186",
+  "claims": [
+    {
+      "text": "Visual Information Gain is defined as a perplexity-based log-ratio measuring how much image conditioning reduces answer uncertainty (Section 3.2).",
+      "status": "unverified"
+    },
+    {
+      "text": "VIG is decomposable to sample and token levels, enabling fine-grained detection of visually grounded tokens such as colors, spatial relations, and attributes (Section 3.3).",
+      "status": "unverified"
+    },
+    {
+      "text": "Examples on MS-COCO show VIG is positive for matching images, smaller for partially grounded images, and negative for conflicting images (Table 1).",
+      "status": "unverified"
+    },
+    {
+      "text": "Token-level analysis identifies high positive loss differences for visually grounded words and near-zero or negative differences for weakly visual tokens (Table 2).",
+      "status": "unverified"
+    },
+    {
+      "text": "VIG-guided selective training prioritizes high-VIG samples and tokens to improve visual grounding while reducing supervision (Section 3.4).",
+      "status": "unverified"
+    },
+    {
+      "text": "Experiments compare VIG-guided selective training against full-data and existing methods for overall performance, data efficiency, and language-bias mitigation (Sections 4.2 and 4.3).",
+      "status": "unverified"
+    }
+  ],
+  "claim_count": 6,
+  "max_points": 12
+}

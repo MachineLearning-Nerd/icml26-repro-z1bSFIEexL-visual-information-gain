@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MachineLearning-Nerd/icml26-visual-information-gain",
+  "former_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-z1bSFIEexL-visual-information-gain",
+  "paper": {
+    "title": "Focusing Where Vision Matters: Selective Training for Large Vision Language Models via Visual Information Gain",
+    "authors": [
+      "Seulbi Lee",
+      "Sangheum Hwang"
+    ],
+    "arxiv": "2602.17186v2",
+    "openreview": "z1bSFIEexL"
+  },
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
+  "publication_allowed": false,
+  "claims": [
+    {
+      "id": "C1",
+      "paper_claim": "Visual Information Gain is defined as a perplexity-based log-ratio measuring how much image conditioning reduces answer uncertainty.",
+      "status": "TOY_SOURCE_VIG_FORMULA",
+      "evidence": [
+        "src/claim1_vig_definition_toy.py",
+        "outputs/claim1_vig_definition_toy/summary.json"
+      ]
+    },
+    {
+      "id": "C2",
+      "paper_claim": "VIG is decomposable to sample and token levels, enabling fine-grained detection of visually grounded tokens.",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv_source.tar.gz"
+      ]
+    },
+    {
+      "id": "C3",
+      "paper_claim": "Examples on MS-COCO show positive VIG for matching images, smaller positive VIG for partially grounded images, and negative VIG for conflicting images.",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv_source.tar.gz",
+        "outputs/claim1_vig_definition_toy/summary.json"
+      ]
+    },
+    {
+      "id": "C4",
+      "paper_claim": "Token-level analysis identifies high positive loss differences for visually grounded words and near-zero or negative differences for weakly visual tokens.",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv_source.tar.gz"
+      ]
+    },
+    {
+      "id": "C5",
+      "paper_claim": "VIG-guided selective training prioritizes high-VIG samples and tokens to improve visual grounding while reducing supervision.",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv_source.tar.gz"
+      ]
+    },
+    {
+      "id": "C6",
+      "paper_claim": "Experiments compare VIG-guided selective training against full-data and existing methods for overall performance, data efficiency, and language-bias mitigation.",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv_source.tar.gz"
+      ]
+    }
+  ]
+}

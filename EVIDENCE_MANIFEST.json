@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MachineLearning-Nerd/icml26-visual-information-gain",
+  "policy": "sha256 and byte length for every tracked artifact except mutable state and this manifest",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 44,
+      "sha256": "86c42cf2b20cae081af90a0740ca0f74d3a1ce77a3a51e770359d982af78115c"
+    },
+    {
+      "path": ".trackio/logbook/pages/claim-1-vig-definition/page.md",
+      "bytes": 405,
+      "sha256": "d80a8bcbe3f9950b2cc6f295f1789032c5192dbf1adcc6a6fe5b0d3f0d4bb95b"
+    },
+    {
+      "path": "AUTHOR_THANK_YOU.md",
+      "bytes": 659,
+      "sha256": "fb2221cfa420af134878b000bc9ad98f6bf399fc14a2edeae353858f4bb69766"
+    },
+    {
+      "path": "BRANCH_AUDIT.md",
+      "bytes": 783,
+      "sha256": "8be79bd4b7c9a02ef720e65bf0f43d8b3a7b04def9fa0395089b045269664f1f"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 564,
+      "sha256": "3158a07025bf68b583eb270e7373c9270263a4f96dc079a17ce96c60bbeb9b7b"
+    },
+    {
+      "path": "CLAIM_EVIDENCE.md",
+      "bytes": 5318,
+      "sha256": "e13e7ca8dfd629329c521a8c4481cfd260f1ea41701c5e13de3dcf180a5b193d"
+    },
+    {
+      "path": "ENVIRONMENT.md",
+      "bytes": 760,
+      "sha256": "42c4a6caee893cfcac2cf6dc11543aa15445cdb78a8851dba149225c70501513"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12094,
+      "sha256": "2d7fda045cb8f53cd6b8cc7bd559322172a83519aabe874e2832a45d2ff92b14"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 1571,
+      "sha256": "1f4d1441891f9d89459b7447b56f79f695800d50168ee8c9f30f6ae3b00b10ca"
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "bytes": 4976,
+      "sha256": "d3b9430ce1cd49d444d8ca08df35cbca212692b86aea96a5eb019f868b928cae"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 1436,
+      "sha256": "6f5fbc3c7a05932436b7e342f48a5a2ad87231dd988b2340337cbd0feb5727e0"
+    },
+    {
+      "path": "branch-audit.md",
+      "bytes": 185,
+      "sha256": "d818e918405c385f22d5c55cfe322187b7cf9a531ecac3d6b85a44a65776adce"
+    },
+    {
+      "path": "claims.json",
+      "bytes": 2537,
+      "sha256": "b3792de39cfe8dd093fcb55e5f176962d6b93e5153022b4cc89277b67e3bbc00"
+    },
+    {
+      "path": "contract/live_claims.json",
+      "bytes": 1697,
+      "sha256": "42d2202c5a67a1a7c205c2a1670682430d32e1c626f1a69c3f850b11fe18698c"
+    },
+    {
+      "path": "evidence/source/SHA256SUMS",
+      "bytes": 162,
+      "sha256": "b842bdee219edd87d63447d4c4d5325dea183e5abe4e39ec9b352a424dfac94f"
+    },
+    {
+      "path": "evidence/source/arxiv.pdf",
+      "bytes": 17698453,
+      "sha256": "b8c6f6c186b5dafc0236e86febf9ed4e71ece2b599d6cfe85df888c53f401a3e"
+    },
+    {
+      "path": "evidence/source/arxiv_source.tar.gz",
+      "bytes": 13653730,
+      "sha256": "3302d743c3f3654aed8b78448f1bdb20c58d59b465253c43272ec28514c1c517"
+    },
+    {
+      "path": "outputs/claim1_vig_definition_toy/README.md",
+      "bytes": 510,
+      "sha256": "c7a0a34ca4e8783a8d04a45872511943b37e3bfeedf4c979e458e1a6b12acc85"
+    },
+    {
+      "path": "outputs/claim1_vig_definition_toy/SHA256SUMS",
+      "bytes": 324,
+      "sha256": "462c63888fc631500b4fbe4d2ce648fb023bdde158319e2d9648811340386eef"
+    },
+    {
+      "path": "outputs/claim1_vig_definition_toy/config.json",
+      "bytes": 167,
+      "sha256": "62fff6d2a19c8d22d75543b6f89708219bd4afb7660e802ecc2bdeb4b092cbe9"
+    },
+    {
+      "path": "outputs/claim1_vig_definition_toy/raw_probabilities.json",
+      "bytes": 1058,
+      "sha256": "eca0ea239f5e283002d0108efaf13ca824e9e1b24d92d19d547486103ddc1f04"
+    },
+    {
+      "path": "outputs/claim1_vig_definition_toy/results.csv",
+      "bytes": 335,
+      "sha256": "1adb83e2263377d14d82923c05fbb740849a4de0e77f434edb2b7aae0c6ee044"
+    },
+    {
+      "path": "outputs/claim1_vig_definition_toy/summary.json",
+      "bytes": 1463,
+      "sha256": "25e4e79c8e75f4bbd475a840bad7b6ea506383a08b2e89ae2f6954b950a78135"
+    },
+    {
+      "path": "src/claim1_vig_definition_toy.py",
+      "bytes": 2233,
+      "sha256": "6828ed91ab2e8761a57ea033de8a844819977f68735e54422042acdeb5a38b01"
+    },
+    {
+      "path": "tests/test_claim1_vig.py",
+      "bytes": 348,
+      "sha256": "6bee25cf364a20ad3e8bf7643409586fdc4225ff467eb3c7388afb9a0bf8e55b"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "bytes": 117,
+      "sha256": "f09c9240798511846961957a5b4c996d12bf71e46a14f7c1cc5290a7d4dbb0b4"
+    },
+    {
+      "path": "verify_final.py",
+      "bytes": 8351,
+      "sha256": "939d1f1afda661f24d52caf67fd1341e3f5edb42fb281498033e3ef05c157441"
+    }
+  ]
+}

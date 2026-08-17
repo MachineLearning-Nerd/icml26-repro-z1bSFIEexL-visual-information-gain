@@ -1,8 +1,14 @@
-# Visual Information Gain: Source-Pinned ICML 2026 Reproduction Audit
+# ICML 2026 — Visual Information Gain
+
+Source-pinned audit of the paper “Focusing Where Vision Matters: Selective Training for Large Vision Language Models via Visual Information Gain.”
+
+- Canonical repository: https://github.com/MachineLearning-Nerd/icml26-visual-information-gain
+- Former repository name: icml26-repro-z1bSFIEexL-visual-information-gain
+- Repository owner and canonical commit identity: MachineLearning-Nerd
 
 This repository is a claim-by-claim audit of **“Focusing Where Vision Matters: Selective Training for Large Vision Language Models via Visual Information Gain.”** It pins the paper source, records the exact VIG definition and selective-training path, and executes a finite synthetic-probability toy for the metric. The local toy is intentionally not presented as LVLM, image, MS-COCO, or benchmark evidence.
 
-> **Current status:** Claim 1 has a **formula-level toy**. Claims 2–6 remain **unverified locally** because this repository contains no LVLM checkpoint, image/text dataset, model forward-pass logs, training run, or benchmark output generated independently here.
+> **Current status:** Published source-pinned audit. Claim 1 has a **formula-level toy**. Claims 2–6 remain **unverified locally** because this repository contains no LVLM checkpoint, image/text dataset, model forward-pass logs, training run, or benchmark output generated independently here. Overall verdict: **INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY**.
 
 ## Paper and resources
 
@@ -56,14 +62,24 @@ The paper reports benchmark improvements and reduced active-token supervision, b
 | `tests/test_contract.py` | Contract metadata check |
 | `STATUS.md` | Human-readable phase and next action |
 | `AUTONOMOUS_STATE.json` | Machine-readable evidence boundary and run state |
+| `CLAIM_EVIDENCE.md` | Claim-by-claim production path and local evidence boundary |
+| `SOURCE_AUDIT.md` | PDF/archive checksums and source-member inventory |
+| `EVIDENCE_MANIFEST.json` | Hash and byte manifest for every tracked audit artifact |
+| `REPORT.md` | Executive audit result and reproduction limitations |
+| `ENVIRONMENT.md` | Compute policy and reproducibility environment |
+| `AUTHOR_THANK_YOU.md` | Credit and thank-you note to the paper authors |
+| `CITATION.cff` | Machine-readable citation for the paper and audit |
+| `BRANCH_AUDIT.md` | Canonical branch and commit-identity audit |
+| `claims.json` | Machine-readable claim status ledger |
+| `verify_final.py` | Lightweight final-state verifier |
 
 ## Branch inventory
 
 | Branch | Role | State |
 | --- | --- | --- |
-| `main` | Published source-pinned audit, documentation, and bounded VIG toy | Current default branch |
+| `main` | Published source-pinned audit, documentation, and bounded VIG toy | Sole canonical/default branch |
 
-The old `master` branch was a stale pre-toy snapshot. It is preserved locally as `backup/pre-main-branch-cleanup` and is removed from the published repository after `main` is made the default branch.
+The stale master branch and original local ref were removed after a complete recovery bundle was written. The published repository is intentionally single-branch.
 
 ## Claim-to-evidence ledger
 
@@ -96,6 +112,16 @@ python3 -m pytest -q tests/test_claim1_vig.py tests/test_contract.py
 ~~~
 
 The toy uses only Python’s standard library. If `pytest` is unavailable, the direct Python checks still exercise the recorded evidence.
+
+## Final verification
+
+Run:
+
+~~~bash
+python3 verify_final.py
+~~~
+
+The verifier checks the canonical repository URL, one-branch state, MachineLearning-Nerd commit attribution, claim/status JSON, source checksums and archive inventory, toy outputs, and the tracked-file evidence manifest. It must print FINAL_AUDIT=VERIFIED.
 
 ## Reproduction policy
 

@@ -1,9 +1,15 @@
 {
   "schema_version": 1,
   "openreview_id": "z1bSFIEexL",
+  "arxiv": "2602.17186v2",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-visual-information-gain",
-  "phase": "claim_1_vig_definition_toy_complete",
-  "next_action": "independent_review_claim_1_vig_toy_against_pinned_definition_then_assess_lvml_feasibility",
+  "former_github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-z1bSFIEexL-visual-information-gain",
+  "phase": "published_and_verified",
+  "current_branch": "main",
+  "branch_set": [
+    "main"
+  ],
+  "next_action": "select_next_icml_repository",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
@@ -20,6 +26,15 @@
     "5": 0,
     "6": 0
   },
+  "claim_statuses": {
+    "C1": "TOY_SOURCE_VIG_FORMULA",
+    "C2": "UNVERIFIED",
+    "C3": "UNVERIFIED",
+    "C4": "UNVERIFIED",
+    "C5": "UNVERIFIED",
+    "C6": "UNVERIFIED"
+  },
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
   "claim_1_outcome": {
